@@ -197,6 +197,7 @@ img {
 }
 .header-nav-item {
 }
+
 .header-nav-link {
 	position: relative;
 	display: block;
@@ -236,6 +237,10 @@ img {
 	border-radius: 2px;
 }
 
+.header-nav-item.active .header-nav-link {
+	color: var(--text-focus);
+}
+
 .header-nav-item.active-link .header-nav-link {
 	color: var(--text-focus);
 }
@@ -271,10 +276,10 @@ img {
 	margin: 0 auto;
 	padding: 188px 0;
 	background-color: var(--bg-hero);
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-		url('../images/hero image.jpg');
-	/* background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+	/* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url('../images/hero image.jpg'); */
+	background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+		url('../images/hero image.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
