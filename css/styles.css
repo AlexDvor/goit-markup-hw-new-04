@@ -30,7 +30,8 @@
 	--bg-overlay-hover: var(--color-green-500);
 	--bg-button-hover: var(--color-blue-600);
 	--bg-hero-gradient: rgba(46, 47, 60, 0.7);
-	--bg-social-hover: var(--color-blue-600);
+	--bg-social-primary: var(--color-blue-600);
+	--bg-social-secondary: var(--color-green-500);
 
 	/* 🪞 Borders & Shadows */
 	--border-color: var(--color-gray-100);
@@ -147,7 +148,7 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-	background-color: var(--bg-social-hover);
+	background-color: var(--bg-social-primary);
 }
 
 .social-icon {
@@ -445,6 +446,7 @@ img {
 
 .footer-container {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-about-thumb {
@@ -461,6 +463,15 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--text-inverse);
 	margin-bottom: 16px;
+}
+
+.footer-social-list {
+	gap: 16px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+	background-color: var(--bg-social-secondary);
 }
 
 .logo-footer {
