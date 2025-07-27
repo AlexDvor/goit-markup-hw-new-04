@@ -236,6 +236,19 @@ img {
 }
 .features-item {
 }
+
+.features-wrap-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: 264px;
+	height: 112px;
+	margin-bottom: 8px;
+	background-color: #f4f4fd;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+}
 .features-subtitle {
 	font-weight: 500;
 	font-size: 20px;
