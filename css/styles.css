@@ -27,6 +27,8 @@
 	--background-footer-color: #2e2f42;
 	--background-team-color: var(--gris);
 	--background-hero-gradient: rgba(46, 47, 60, 0.7);
+	--background-social-hover: #31d0aa;
+	--background-button-hover: #404bbf;
 
 	/* 🔖 Components */
 
@@ -92,6 +94,12 @@ img {
 	border-style: none;
 	border-radius: 4px;
 	box-shadow: 0px 4px 4px 0px var(--button-shadow-color);
+	transition: background-color var(--animation-st);
+}
+
+.button:hover,
+.button:focus {
+	background-color: var(--background-button-hover);
 }
 
 .visually-hidden {
@@ -101,7 +109,6 @@ img {
 	margin: -1px;
 	border: 0;
 	padding: 0;
-
 	white-space: nowrap;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
@@ -113,6 +120,9 @@ img {
 	gap: 24px;
 }
 .social-item {
+}
+
+.social-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -121,10 +131,15 @@ img {
 	flex-shrink: 0;
 	background-color: var(--accent-color);
 	border-radius: 50%;
+	transition: background-color var(--animation-st);
+}
+
+.social-link:hover,
+.social-link:focus {
+	background-color: var(--background-social-hover);
 }
 
 .social-icon {
-	display: flex;
 }
 
 .social-icon {
@@ -191,6 +206,10 @@ img {
 	border-radius: 2px;
 }
 
+.header-nav-item.active-link .header-nav-link {
+	color: var(--focus-color);
+}
+
 .header-address {
 	font-style: normal;
 	margin-left: auto;
@@ -202,10 +221,12 @@ img {
 }
 .header-address-item {
 }
+
 .header-address-link {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	transition: color var(--animation-st);
 }
 
 .header-address-link:hover,
@@ -244,11 +265,6 @@ img {
 .hero-btn {
 	display: block;
 	margin: 0 auto;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-	background-color: var(--focus-color);
 }
 
 /* Features */
@@ -420,6 +436,26 @@ img {
 .footer-section {
 	background-color: var(--background-footer-color);
 	padding: 100px 0;
+}
+
+.footer-container {
+	display: flex;
+}
+
+.footer-about-thumb {
+	margin-right: 120px;
+}
+
+.footer-social-thumb {
+}
+
+.footer-social-text {
+	font-weight: 500;
+
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+	margin-bottom: 16px;
 }
 
 .logo-footer {
