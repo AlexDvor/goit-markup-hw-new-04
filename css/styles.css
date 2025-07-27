@@ -105,6 +105,29 @@ img {
 	overflow: hidden;
 }
 
+.social-list {
+	display: flex;
+	gap: 24px;
+}
+.social-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	background-color: var(--accent-color);
+	border-radius: 50%;
+}
+
+.social-icon {
+	display: flex;
+}
+
+.social-icon {
+	fill: var(--background-main-color);
+}
+
 /* Header  */
 
 .header {
@@ -294,7 +317,10 @@ img {
 }
 
 .team-info-wrap {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 32px 0;
 }
 .team-name {
@@ -309,6 +335,7 @@ img {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	margin-bottom: 8px;
 }
 
 /* Portfolio  */
