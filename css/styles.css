@@ -26,6 +26,7 @@
 	--background-hero-color: #2e2f42;
 	--background-footer-color: #2e2f42;
 	--background-team-color: var(--gris);
+	--background-hero-gradient: rgba(46, 47, 60, 0.7);
 
 	/* 🔖 Components */
 
@@ -155,6 +156,15 @@ img {
 	color: var(--focus-color);
 }
 
+.active-link::after {
+	display: block;
+	content: '';
+	height: 4px;
+	width: 100%;
+	background-color: var(--focus-color);
+	border-radius: 2px;
+}
+
 .header-address {
 	font-style: normal;
 	margin-left: auto;
@@ -180,8 +190,18 @@ img {
 /* Hero */
 
 .hero-section {
+	max-width: 1440px;
+	margin: 0 auto;
 	padding: 188px 0;
 	background-color: var(--background-hero-color);
+	background-image: linear-gradient(
+			to bottom,
+			var(--background-hero-gradient),
+			var(--background-hero-gradient)
+		),
+		url('../images/hero image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .hero-title {
