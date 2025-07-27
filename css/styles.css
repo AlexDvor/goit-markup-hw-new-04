@@ -30,10 +30,12 @@
 	--bg-overlay-hover: var(--color-green-500);
 	--bg-button-hover: var(--color-blue-600);
 	--bg-hero-gradient: rgba(46, 47, 60, 0.7);
+	--bg-social-hover: var(--color-blue-600);
 
 	/* 🪞 Borders & Shadows */
 	--border-color: var(--color-gray-100);
 	--border-color-secondary: var(--color-gray-400);
+	--icon-color: var(--color-gray-50);
 	--shadow-button: 0 4px 4px rgba(0, 0, 0, 0.15);
 	--shadow-card: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
 		0 2px 1px rgba(46, 47, 66, 0.08);
@@ -125,6 +127,7 @@ img {
 
 .social-list {
 	display: flex;
+	justify-content: center;
 	gap: 24px;
 }
 .social-item {
@@ -144,14 +147,14 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-	background-color: var(--bg-overlay-hover);
+	background-color: var(--bg-social-hover);
 }
 
 .social-icon {
 }
 
 .social-icon {
-	fill: var(--text-inverse);
+	fill: var(--icon-color);
 }
 
 /* Header  */
@@ -249,14 +252,11 @@ img {
 	margin: 0 auto;
 	padding: 188px 0;
 	background-color: var(--bg-hero);
-	background-image: linear-gradient(
-			to bottom,
-			var(--bg-hero-gradient),
-			var(--bg-hero-gradient)
-		),
+	background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
 		url('../images/hero image.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .hero-title {
