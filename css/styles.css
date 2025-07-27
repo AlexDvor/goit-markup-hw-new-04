@@ -425,24 +425,22 @@ img {
 }
 .portfolio-img {
 }
-.portfolio-overlay-thumb {
-	position: absolute;
-	inset: 0;
-	padding: 40px 32px;
-	background-color: var(--bg-overlay);
-	transform: translateY(100%);
-	transition: transform var(--transition-base);
-}
 
-.portfolio-item:hover .portfolio-overlay-thumb {
+.portfolio-item:hover .portfolio-overlay-text {
 	transform: translateY(0);
 }
 
 .portfolio-overlay-text {
+	position: absolute;
+	inset: 0;
+	padding: 40px 32px;
 	font-family: var(--font-primary);
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-muted);
+	background-color: var(--bg-overlay);
+	transform: translateY(100%);
+	transition: transform var(--transition-base);
 }
 
 .portfolio-info-wrap {
